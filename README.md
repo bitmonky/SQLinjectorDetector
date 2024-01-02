@@ -1,7 +1,7 @@
 # SQLinjectorDetector
 A set of tools  that can detect  SQL Injection attacks  so you can block the attack and save resources they consume.
 
-Here is the the mkySQL database structure required.
+Here is the the mySQL database structure required.
 ```
 CREATE TABLE `tblStrangeStuf` (
   `stsMd5` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
