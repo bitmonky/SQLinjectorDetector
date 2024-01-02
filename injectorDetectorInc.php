@@ -7,7 +7,16 @@ use checkLogInject($inputData)
   an ongoing sql inject attack.
 */
  
-echo "hello World";
+include_once("mkyConSqli.php");
+//ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+
+ 
+$SQL = 'Select * from tblStrangeStuf limit 1';
+$res = mkyMyqry($SQL);
+$rec = mkyMyFetch($res);
+
+echo "hello World: ".$rec['stsMd5'];
 
 function exitLogInject($data,$fld){
   global $userID;
