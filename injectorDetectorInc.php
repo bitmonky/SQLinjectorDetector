@@ -1,4 +1,12 @@
 <?php
+/*
+Usage:
+use checkLogInject($inputData)
+  the function checks all user inputs for signs of a SQL inject attack.
+  will check the input against a known database of injections scripts and some AI to test for 
+  an ongoing sql inject attack.
+*/
+ 
 echo "hello World";
 
 function exitLogInject($data,$fld){
